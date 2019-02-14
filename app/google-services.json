@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "828037577129",
+    "firebase_url": "https://nightparty-9dea9.firebaseio.com",
+    "project_id": "nightparty-9dea9",
+    "storage_bucket": "nightparty-9dea9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828037577129:android:6adbd7aaf5323254",
+        "android_client_info": {
+          "package_name": "com.example.rene.nightparty0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828037577129-ljjm3m28cbj60g0t0bng62mm2kb28tdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZUsGQXJbpykcHeiShFgsK5WFbivEDv0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

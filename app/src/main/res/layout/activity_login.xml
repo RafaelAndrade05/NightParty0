@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/fondo"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/button_cerrar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/cross"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        >
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/button_iniciarsesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLoginAndPassword"
+            android:drawableLeft="@drawable/ic_account"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/txt_login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/button_crear_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorCreateAccount"
+            android:drawableLeft="@drawable/ic_add_user_"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/txt_account"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/button_cuenta_negocio"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:drawableRight="@drawable/ic_next"
+            android:background="#262626"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="@string/text_business_account"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>

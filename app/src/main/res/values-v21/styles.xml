@@ -1,0 +1,48 @@
+<resources>
+
+    <!--appBar trasparente para el navigation Drawer-->
+    <style name="TemaTransparente" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- activar animaciones    -->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <!-- Tema Claro -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- cambia el color de la status bar a gris -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- activar animaciones    -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <!-- Tema oscuro -->
+    <style name="SecondActivityTheme.Base" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#000000</item> <!-- cambia action bar -->
+        <item name="colorPrimaryDark">#000000</item> <!--color del status bar-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- activar animaciones    -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <!--Tamaño del rating bar-->
+    <style name="MyRatingBar" parent="@android:style/Widget.Material.RatingBar.Small">
+
+    </style>
+
+
+</resources>

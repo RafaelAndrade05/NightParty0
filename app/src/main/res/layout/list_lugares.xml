@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imagenLugar"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="#8c000000"
+                android:textColor="#ffe3e3e3"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/imagenLugar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nombre"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MyRatingBar"
+                    android:numStars="5"
+                    android:rating="4"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_categoria"
+                        android:text="Categoria"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"/>
+
+                    <TextView
+                        android:id="@+id/divider"
+                        style="@style/TextDivider"
+                        android:layout_alignTop="@+id/txt_categoria"
+                        android:layout_toRightOf="@+id/txt_categoria"
+                        android:text="."
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_ubicacion"
+                        android:text="Ubicacion"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"/>
+
+                    <TextView
+                        android:id="@+id/txt_descripcion"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_distancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:fontFamily="sans-serif"
+                    android:textSize="12sp"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

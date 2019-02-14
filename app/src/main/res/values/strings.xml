@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">NightParty</string>
+    <string name="facebook_app_id">2134706623434099</string>
+    <string name="fb_login_protocol_scheme">fb2134706623434099</string>
+
+    <!--Barra de navegacion!-->
+    <string name="title_activity_barra_navegacion">barraNavegacion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_account">tipo de cuenta</string>
+    <string name="nav_header_businnes">Negocio</string>
+    <string name="nav_header_client">Cliente</string>
+    <string name="nav_account">Mi cuenta</string>
+    <string name="nav_business">Mis negocios</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_reservation">Mis reservaciones</string>
+    <string name="nav_logout">Cerrar Sesion</string>
+    <string name="nav_share">Compartir</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="nav_promotions">Promociones</string>
+    <string name="nav_comments">Mensajes</string>
+    <string name="nav_place">Añade tu negocio</string>
+    <string name="action_settings">Settings</string>
+    <!--Titulos activitys!-->
+    <string name="title_activity_principal">NigthParty</string>
+    <string name="title_activity_micuenta">Mis datos</string>
+    <string name="title_activity_reservaciones_usuario">Mis reservaciones</string>
+    <string name="title_activity_altaLugar">Añade tu negocio</string>
+    <string name="title_activity_misNegocios">Mis negocios</string>
+    <string name="title_activity_detalle_reservacion_negocio">Detalle reservacion</string>
+    <string name="title_activity_editar_negocio">Editar negocio</string>
+    <string name="title_activity_promociones">Promociones</string>
+    <string name="title_activity_restablecer_contra">¿Olvido su contraseña?</string>
+    <!--Login Activity!-->
+    <string name="nav_login">Inicia sesión o crea una cuenta</string>
+    <string name="txt_login">Iniciar sesión con e-mail</string>
+    <string name="txt_account">Crear una cuenta con e-mail</string>
+    <string name="txt_email">Correo</string>
+    <string name="txt_create_account">Crear cuenta</string>
+    <string name="txt_login_password">Inciar sesión</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="text_business_account">Cuenta negocio</string>
+    <string name="login_email_forgot_pasword">¿Olvidó su contraseña?</string>
+    <!--Login Business activity!-->
+    <string name="login_business_titulo">Crear cuenta negocio</string>
+    <!--Alta Lugar!-->
+    <string name="alta_nombre">Nombre</string>
+    <string name="alta_descripcion">Descripcion</string>
+    <string name="alta_categoria">Categoria</string>
+    <string name="alta_imagenes">Selecciona las imagenes</string>
+    <string name="alta_fromulario_requerido">Requerido</string>
+    <string name="alta_titulo_lugar">Datos del lugar</string>
+    <string name="alta_titulo_imagenes">Imagenes</string>
+    <string name="alta_titulo_ubicacion">Ubicación</string>
+    <string name="alta_titulo_buscador">Escribe la direccion</string>
+    <string name="alta_titulo_guardar">Guardar</string>
+    <string name="alta_error_guardar">Ocurrio un error!</string>
+    <string name="alta_exitoso_guardar">Tu negocio se ha guardado correctamente</string>
+    <!--Google Maps!-->
+    <string name="txt_mylocation">Mi localización</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps_alta_lugar">Map</string>
+    <!--Principal!-->
+    <string name="principal_load_near_places">Buscando lugares cercanos</string>
+    <!--Detalle Lugar!-->
+    <string name="detalle_favorito">Add Favorite</string>
+    <string name="detalle_añadido_favorito">Se ha añadido a tus favoritos</string>
+    <string name="detalle_añadido_fallo">Debes iniciar sesión</string>
+    <string name="detalle_eliminado_favorito">Se ha eliminado de tus favoritos </string>
+    <string name="detalle_ubicacion">Ubicación</string>
+    <string name="detalle_distancia_ubicacion">de tu ubicación actual</string>
+    <string name="detalle_reservar">Reservar</string>
+    <string name="detalle_disponibilidad">Disponibilidad</string>
+    <string name="detalle_descripcion">Descripción</string>
+    <string name="detalle_promociones">Promociones</string>
+    <string name="detalle_login_obligatorio">Debes iniciar sesion para hacer reservaciones</string>
+    <string name="detalle_disponiblidad_baja">Baja</string>
+    <string name="detalle_disponiblidad_media">Media</string>
+    <string name="detalle_disponiblidad_alta">Alta</string>
+    <string name="detalle_fragment_detalle">Detalle</string>
+    <string name="detalle_fragment_promociones">Promoción</string>
+    <string name="detalle_fragment_ubicacion">Ubicación</string>
+
+    <!--Reservacion Lugar!-->
+    <string name="reservacion_seleccionar_dia">Seleccionar fecha:</string>
+    <string name="reservacion_seleccionar_hora">Seleccionar hora:</string>
+    <string name="reservacion_seleccionar_personas">Seleccionar personas:</string>
+    <string name="reservacion_comentario">Comentario</string>
+    <string name="reservacion_nombre">Nombre</string>
+    <string name="reservacion_telefono">Telefono</string>
+    <string name="reservacion_btn_reservar">Reservar</string>
+    <string name="reservacion_confimacion">Se ha enviado la reservación</string>
+    <string name="reservacion_fallida">No se ha podido enviar la reservación</string>
+    <!--Reservacion detalle usuario!-->
+    <string name="reser_deta_usua_titulo">Reservación</string>
+    <string name="reser_deta_usua_aceptada">Se ha aceptado tu reservacón</string>
+    <string name="reser_deta_usua_rechazada">Se ha rechazado tu reservacón</string>
+    <string name="reser_deta_usua_pendiente">Tu reservación esta pendiente</string>
+    <!--Mi Cuenta!-->
+    <string name="micuenta_datospublicos">Datos publicos</string>
+    <string name="micuenta_actualizar">Actualizar</string>
+    <string name="micuenta_actualiza_correctamente">Datos actualizados correctamente</string>
+    <string name="micuenta_error_subir_imagen">error al subir imagen</string>
+    <!--popup_menu_negocio-->
+    <string name="popup_menu_opcion1">Reservaciones</string>
+    <string name="popup_menu_opcion2">Promociones</string>
+    <string name="popup_menu_opcion3">Editar negocio</string>
+    <string name="popup_menu_opcion4">Ver negocio</string>
+    <string name="popup_menu_opcion5">Mensajes</string>
+    <!--popup_cargando-->
+    <string name="popup_cargando_creando_usuario">Creando usuario</string>
+    <string name="popup_cargando_creando_negocio">Creando negocio</string>
+    <string name="popup_cargando_modificar_negocio">Modificando negocio</string>
+    <string name="popup_cargando_eliminar_negocio">Eliminando negocio</string>
+    <string name="popup_cargando_creando_reservacion">Enviando reservacion</string>
+    <string name="popup_cargando_espere">espere un momento....</string>
+    <string name="popup_guardando_promociones">Guardando la informacion</string>
+    <!--Reservaciones Detalle Negocio!-->
+    <string name="reservacion_negocio_titulo">Reservaciones:</string>
+    <string name="reservacion_negocio_info_reser">Información reservación</string>
+    <string name="reservacion_negocio_info_usua">Información usuario</string>
+    <string name="reservacion_negocio_fecha">Fecha:</string>
+    <string name="reservacion_negocio_personas">Personas:</string>
+    <string name="reservacion_negocio_hora">Hora:</string>
+    <string name="reservacion_negocio_comentario">Comentario:</string>
+    <string name="reservacion_negocio_estatus">Estatus:</string>
+    <string name="reservacion_negocio_nombre">Nombre:</string>
+    <string name="reservacion_negocio_correo">Correo:</string>
+    <string name="reservacion_negocio_telefono">Teléfono:</string>
+    <string name="reservacion_negocio_comentario_usuario">Escribe un comentario para el usuario</string>
+    <string name="reservacion_negocio_btn1">Aceptar</string>
+    <string name="reservacion_negocio_btn2">Rechazar</string>
+    <string name="reservacion_confirmacion_titulo">Confirmacion de reservación en  </string>
+    <string name="reservacion_confirmacion_lugar">Lugar: </string>
+    <string name="reservacion_confirmacion_idLugar">id: </string>
+    <!--Estado Reservacion!-->
+    <string name="reservacion_aceptada">Aceptada</string>
+    <string name="reservacion_rechazada">Rechazada</string>
+    <string name="reservacion_pendiente">Pendiente</string>
+    <!--Editar Neogcio!-->
+    <string name="editar_negocio_disponibilidad">Disponibilidad</string>
+    <string name="boton_modificar">Modificar</string>
+    <string name="boton_eliminar">Eliminar</string>
+    <string name="editar_negocio_mensaje_eliminado">Se ha eliminado tu negocio correctamente</string>
+    <!--Reservaciones Usuario!-->
+    <string name="reservaciones_usuario_no_encontrado">Ups! no se ha encontrado ninguna reservación</string>
+    <string name="title_activity_promociones_disponibilidad">PromocionesDisponibilidad</string>
+    <!--AlertDialog!-->
+    <string name="alertDialogConfirmar">Confirmar</string>
+    <string name="alertDialogCancelar">Cancelar</string>
+    <string name="alertDialogMensajeImagen">¿Desea eliminar la imagen?</string>
+    <string name="alertDialogTituloImagen">Eliminación</string>
+    <string name="alertDialogMensajeBorrarNegocio">¿Estás seguro de eliminar el negocio?</string>
+    <!--RestablecerContraseñaActivity!-->
+    <string name="restabler_contra_activity_email">Introduzca el correo electronico</string>
+    <string name="restablecer_contra_activity_boton">Rest. contraseña</string>
+    <!--FavoritosActivity!-->
+    <string name="favoritos_activity_title">Mis Favoritos</string>
+    <string name="favoritos_activity_sin_lugar">Ups! no se ha encontrado ningun favorito</string>
+    <!--PromocionesDisponibilidadActivity!-->
+    <string name="promocionesDisponibilidad_titulo_promociones">Promociones</string>
+    <string name="promocionesDisponibilidad_descripcion">Descripción</string>
+    <string name="promocionesDisponibilidad_guardado_promo">Se ha guardado correctamente</string>
+    <string name="promocionesDisponibilidad_imagen_requerida">sube almenos una imagen de promocion</string>
+    <string name="promocionesDisponibilidad_num_imagenes">seleccionadas</string>
+    <!--Chat Activity!-->
+    <string name="chatActivity_login_requerido">Debes iniciar sesión</string>
+
+    <!--Chat usuario Activity!-->
+    <string name="chatUsuarioActivity_Mensajes">Mensajes</string>
+    <string name="chatUsuarioActivity_sin_ningun_Mensaje">Ups! no se ha encontrado ningun mensaje</string>
+    <!--Negocios Chats Activity!-->
+    <string name="chatNegocioActivity_Mensajes">Mensajes</string>
+
+
+</resources>

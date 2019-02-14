@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservacionesUsuarioActivity">
+    
+    <ProgressBar
+        android:id="@+id/progress_barInicio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"   
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imagenSinReservacion"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_sad"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tvSinReservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagenSinReservacion"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/reservaciones_usuario_no_encontrado"/>
+
+</RelativeLayout>

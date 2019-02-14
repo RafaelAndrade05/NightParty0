@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rene.nightparty0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconosi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconosi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".DetallesActivity"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".Detalles2Activity"
+            android:theme="@style/DiseñoActivityDetalle2.Base" />
+        <activity
+            android:name=".Principal"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivitysNegocio.AltaLugarActivity"
+            android:label="@string/title_activity_altaLugar"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CrearCuentaActivity" />
+        <activity android:name=".LoginEmailPasswordActivity" />
+        <activity android:name=".ReservacionActivity" />
+        <activity
+            android:name=".MiCuentaActivity"
+            android:label="@string/title_activity_micuenta"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ReservacionesUsuarioActivity"
+            android:label="@string/title_activity_reservaciones_usuario"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base">
+
+        </activity>
+
+        <activity android:name=".ReservacionDetalleUsuarioActivity">
+
+            <intent-filter>
+                <action android:name="ReservacionDetalleUsuarioActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivitysNegocio.MisNegociosActivity"
+            android:label="@string/title_activity_misNegocios"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ActivitysNegocio.ReservacionesNegocioActivity"
+            android:parentActivityName=".ActivitysNegocio.MisNegociosActivity"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ActivitysNegocio.DetalleReservacionNegocioActivity"
+            android:label="@string/title_activity_detalle_reservacion_negocio"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ActivitysNegocio.EditarNegocioActivity"
+            android:label="@string/title_activity_editar_negocio"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ActivitysNegocio.PromocionesDisponibilidadActivity"
+            android:label="@string/title_activity_promociones"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity android:name=".LoginBusinessActivity" />
+        <activity android:name=".CrearCuentaNegocioActivity" />
+        <activity
+            android:name=".RestablecerContrasenaActivity"
+            android:label="@string/title_activity_restablecer_contra"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".FavoritosActivity"
+            android:label="@string/favoritos_activity_title"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity android:name=".ChatActivityUsuario">
+            <intent-filter>
+                <action android:name="ChatActivityUsuario" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatsUsuarioActivity"
+            android:label="@string/chatUsuarioActivity_Mensajes"
+            android:parentActivityName=".Principal"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity
+            android:name=".ActivitysNegocio.ChatsNegocioActivity"
+            android:label="@string/chatNegocioActivity_Mensajes"
+            android:parentActivityName=".ActivitysNegocio.MisNegociosActivity"
+            android:theme="@style/SecondActivityTheme.Base" />
+        <activity android:name=".ActivitysNegocio.ChatActivityNegocio"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".Ayuda.MiFirebaseMessasingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Ayuda.MiFirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/icon" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+
+    </application>
+
+</manifest>
