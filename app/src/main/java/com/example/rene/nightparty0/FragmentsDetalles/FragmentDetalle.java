@@ -20,12 +20,33 @@ import com.example.rene.nightparty0.R;
 import com.example.rene.nightparty0.ReservacionActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class FragmentDetalle extends android.support.v4.app.Fragment {
+
+    public static final String TAG = "FragmentDetalle";
 
     View view;
     Lugar objLugar;
     Bundle argumentos;
+
+    //Disponibilidad en tiempo real
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+    //Componentes
+    Button btnReservar ;
+    Button btnChat ;
+    TextView tvDescripcion ;
+    TextView tvDisponibilidad ;
+    ImageView imageViewDisponibilidad ;
+
 
     public FragmentDetalle() {
 
@@ -43,11 +64,11 @@ public class FragmentDetalle extends android.support.v4.app.Fragment {
         try {
 
             view = inflater.inflate(R.layout.detalles_fragment,container,false);
-            Button btnReservar = (Button)view.findViewById(R.id.button_reservar);
-            Button btnChat = (Button)view.findViewById(R.id.button_chat);
-            TextView tvDescripcion = (TextView)view.findViewById(R.id.detalle_descripcion);
-            TextView tvDisponibilidad = (TextView)view.findViewById(R.id.disponibilidad_texto);
-            ImageView imageViewDisponibilidad = (ImageView)view.findViewById(R.id.disponibilidad_imagen);
+            btnReservar = (Button)view.findViewById(R.id.button_reservar);
+            btnChat = (Button)view.findViewById(R.id.button_chat);
+            tvDescripcion = (TextView)view.findViewById(R.id.detalle_descripcion);
+            tvDisponibilidad = (TextView)view.findViewById(R.id.disponibilidad_texto);
+            imageViewDisponibilidad = (ImageView)view.findViewById(R.id.disponibilidad_imagen);
 
             //obtenemos la informacion
             argumentos = getArguments();
@@ -87,7 +108,33 @@ public class FragmentDetalle extends android.support.v4.app.Fragment {
                 }
             });
 
+
             llenarInformacion(tvDescripcion,tvDisponibilidad,imageViewDisponibilidad);
+
+
+
+            database.getReference("MAC11").child("disponibilidad").addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    if(dataSnapshot.exists())
+                    {
+                        Log.i(TAG,dataSnapshot.toString());
+                        int disponibilidad = dataSnapshot.getValue(Integer.class);
+                        objLugar.setDisponibilidad(disponibilidad);
+                        llenarInformacion(tvDescripcion,tvDisponibilidad,imageViewDisponibilidad);
+
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
+
+
+
 
         } catch (InflateException e) {
             /* map is already there, just return view as it is */
@@ -96,6 +143,8 @@ public class FragmentDetalle extends android.support.v4.app.Fragment {
         return view;
     }
 
+
+
     private void llenarInformacion(final TextView tvDescripcion, final TextView tvDisponibilidad, final ImageView imageViewDisponibilidad) {
 
         Log.i("FRAGMENTS", "LLENANDO FRAGMENT DETALLE");
@@ -103,15 +152,15 @@ public class FragmentDetalle extends android.support.v4.app.Fragment {
 
         if (objLugar.getDisponibilidad() == 0) { //Lugar baja disponibilidad
             tvDisponibilidad.setText(getString(R.string.detalle_disponiblidad_baja));
-            imageViewDisponibilidad.setImageResource(R.mipmap.alta);
+            imageViewDisponibilidad.setImageResource(R.drawable.ic_alta);
             Log.i("ACTUALIZACION", "Entro 0");
         } else if (objLugar.getDisponibilidad() == 1) { //lugar media disponiblidad
             tvDisponibilidad.setText(getString(R.string.detalle_disponiblidad_media));
-            imageViewDisponibilidad.setImageResource(R.mipmap.media);
+            imageViewDisponibilidad.setImageResource(R.drawable.ic_media);
             Log.i("ACTUALIZACION", "Entro 1");
         } else if (objLugar.getDisponibilidad() == 2) { //lugar alta disponiblidad
             tvDisponibilidad.setText(getString(R.string.detalle_disponiblidad_alta));
-            imageViewDisponibilidad.setImageResource(R.mipmap.baja);
+            imageViewDisponibilidad.setImageResource(R.drawable.ic_baja);
             Log.i("ACTUALIZACION", "Entro 2");
         }
 

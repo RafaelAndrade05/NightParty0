@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "828037577129-ltak8o90651r06au3jc3p74eplaa7dlm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rene.nightparty0",
+            "certificate_hash": "139a833a655d5e178e713aadc80ef0fb769d53ed"
+          }
+        },
+        {
+          "client_id": "828037577129-cama6uuf7q7lh2q53rgmrnio8u858vs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rene.nightparty0",
+            "certificate_hash": "e69053f31dda95215ce52b4114cf9f53e40075a3"
+          }
+        },
+        {
           "client_id": "828037577129-ljjm3m28cbj60g0t0bng62mm2kb28tdv.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -25,15 +41,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828037577129-ljjm3m28cbj60g0t0bng62mm2kb28tdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

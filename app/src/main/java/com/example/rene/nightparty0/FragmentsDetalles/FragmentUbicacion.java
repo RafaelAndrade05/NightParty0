@@ -56,6 +56,8 @@ public class FragmentUbicacion extends android.support.v4.app.Fragment implement
             GoogleMapOptions options = new GoogleMapOptions();
             options.liteMode(true); //Mapa en modo lite (imagen estatica de googlemaps)
 
+
+
             //obtencion de mapa
             FragmentManager manager = getFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();

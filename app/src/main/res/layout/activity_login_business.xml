@@ -50,7 +50,9 @@
             android:layout_height="wrap_content"
             android:paddingBottom="15dp"
             android:paddingTop="15dp"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
 
         <Button
             android:id="@+id/button_iniciarsesion"
